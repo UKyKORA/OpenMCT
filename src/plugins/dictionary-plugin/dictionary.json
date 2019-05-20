@@ -1,0 +1,511 @@
+{
+    "name": "Telemetry",
+    "key": "sc",
+  "measurements": [
+    {
+      "name": "Received",
+      "key": "comms.recd",
+      "values": [
+        {
+          "key": "value",
+          "name": "Value",
+          "units": "bytes",
+          "format": "integer",
+          "hints": {
+            "range": 1
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Sent",
+      "key": "comms.sent",
+      "values": [
+        {
+          "key": "value",
+          "name": "Value",
+          "units": "bytes",
+          "format": "integer",
+          "hints": {
+            "range": 1
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motor 1 Speed",
+      "key": "control.motor1speed",
+      "values": [
+        {
+          "key": "value",
+          "name": "Motor 1 Speed",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 256
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motor 1 Current",
+      "key": "sensors.motor1current",
+      "values": [
+        {
+          "key": "value",
+          "name": "Motor 1 Current",
+          "units": "Amps",
+          "format": "integer",
+          "hints": {
+            "range": 30
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motor 2 Speed",
+      "key": "control.motor2speed",
+      "values": [
+        {
+          "key": "value",
+          "name": "Motor 2 Speed",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 256
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motor 2 Current",
+      "key": "sensors.motor2current",
+      "values": [
+        {
+          "key": "value",
+          "name": "Motor 2 Current",
+          "units": "Amps",
+          "format": "integer",
+          "hints": {
+            "range": 30
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motor 3 Speed",
+      "key": "control.motor3speed",
+      "values": [
+        {
+          "key": "value",
+          "name": "Motor 3 Speed",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 256
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motor 3 Current",
+      "key": "sensors.motor3current",
+      "values": [
+        {
+          "key": "value",
+          "name": "Motor 3 Current",
+          "units": "Amps",
+          "format": "integer",
+          "hints": {
+            "range": 30
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motor 4 Speed",
+      "key": "control.motor4speed",
+      "values": [
+        {
+          "key": "value",
+          "name": "Motor 4 Speed",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 256
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Motor 4 Current",
+      "key": "sensors.motor4current",
+      "values": [
+        {
+          "key": "value",
+          "name": "Motor 4 Current",
+          "units": "Amps",
+          "format": "integer",
+          "hints": {
+            "range": 30
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dig Motor Speed",
+      "key": "control.digmotorspeed",
+      "values": [
+        {
+          "key": "value",
+          "name": "Dig Motor Speed",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 256
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dig Motor Current",
+      "key": "sensors.digmotorcurrent",
+      "values": [
+        {
+          "key": "value",
+          "name": "Dig Motor Current",
+          "units": "Amps",
+          "format": "integer",
+          "hints": {
+            "range": 30
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Offload Motor Speed",
+      "key": "control.offloadmotorspeed",
+      "values": [
+        {
+          "key": "value",
+          "name": "Offload Motor Speed",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 256
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Offload Motor Current",
+      "key": "sensors.offloadmotorcurrent",
+      "values": [
+        {
+          "key": "value",
+          "name": "Offload Motor Current",
+          "units": "Amps",
+          "format": "integer",
+          "hints": {
+            "range": 30
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Raise Arm Speed",
+      "key": "control.raisearmspeed",
+      "values": [
+        {
+          "key": "value",
+          "name": "Raise Arm Speed",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 256
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Raise Arm Current",
+      "key": "sensors.raisearmcurrent",
+      "values": [
+        {
+          "key": "value",
+          "name": "Raise Arm Current",
+          "units": "Amps",
+          "format": "integer",
+          "hints": {
+            "range": 30
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Raise Arm Position",
+      "key": "sensors.raisearmposition",
+      "values": [
+        {
+          "key": "value",
+          "name": "Raise Arm Position",
+          "units": "%",
+          "format": "integer",
+          "hints": {
+            "range": 100
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+     {
+      "name": "Dig Arm Speed",
+      "key": "sensors.digarmspeed",
+      "values": [
+        {
+          "key": "value",
+          "name": "Dig Arm Speed",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 4096
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+     {
+      "name": "Dig Arm Current",
+      "key": "sensors.digarmcurrent",
+      "values": [
+        {
+          "key": "value",
+          "name": "Dig Arm Current",
+          "units": "Amps",
+          "format": "integer",
+          "hints": {
+            "range": 30
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },
+    {
+      "name": "Dig Arm Position",
+      "key": "sensors.digarmposition",
+      "values": [
+        {
+          "key": "value",
+          "name": "Dig Arm Position",
+          "units": "PWM",
+          "format": "integer",
+          "hints": {
+            "range": 100
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    },  
+    {
+      "name": "Main Battery Voltage",
+      "key": "sensors.mainbattey",
+      "values": [
+        {
+          "key": "value",
+          "name": "Main Battery Voltage",
+          "units": "Volts",
+          "format": "float",
+          "hints": {
+            "range": 15
+          }
+        },
+        {
+          "key": "utc",
+          "source": "timestamp",
+          "name": "Timestamp",
+          "format": "utc",
+          "hints": {
+            "domain": 1
+          }
+        }
+      ]
+    }
+  ]
+}

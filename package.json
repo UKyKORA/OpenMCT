@@ -1,0 +1,15 @@
+{
+  "name": "kats-web-control",
+  "version": "0.0.1",
+  "description": "KATS Mission Control - Open MCT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UKRMT/web-control.git"
+  },
+  "author": "UKRMT",
+  "license": "ISC",
+  "homepage": "https://github.com/UKRMT/web-control",
+  "dependencies": {
+    "openmct": "nasa/openmct"
+  }
+}
